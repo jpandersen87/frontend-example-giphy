@@ -3,7 +3,7 @@ import axios, { AxiosError } from 'axios';
 import {Gif, GifData, GifsData} from '../gif';
 import {GifDisplay} from './GifDisplay';
 import {useDebounce} from '../Hooks/useDebounce';
-import { DefaultButton, MessageBar, MessageBarType, SearchBox, Spinner, SpinnerSize, TextField } from '@fluentui/react';
+import { DefaultButton, MessageBar, MessageBarType, SearchBox, Spinner, SpinnerSize } from '@fluentui/react';
 
 // Giphy Search component. Requests 3 individual random gifs on mount by default to show
 // before user uses search.

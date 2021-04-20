@@ -1,4 +1,3 @@
-import { DocumentCardImage } from '@fluentui/react';
 import { DocumentCard, Stack } from 'office-ui-fabric-react';
 import React from 'react';
 import {Gif} from '../gif';

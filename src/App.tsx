@@ -1,11 +1,11 @@
 import React from 'react';
-import { Stack, Text, Link, FontWeights, IStackTokens } from '@fluentui/react';
-import logo from './logo.svg';
+import { Stack, IStackTokens } from '@fluentui/react';
+//import logo from './logo.svg';
 import './App.css';
 import {GifSearch} from './Components/GifSearch';
 import axios from 'axios';
 
-const boldStyle = { root: { fontWeight: FontWeights.semibold } };
+//const boldStyle = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
 
 console.log(process.env.REACT_APP_GIPHY_API_KEY);
