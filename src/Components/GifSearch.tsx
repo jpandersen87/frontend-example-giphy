@@ -55,8 +55,13 @@ export const GifSearch: React.FunctionComponent<{numRandom?:number, limit?:numbe
                 setError(e);
             }
         }
-        if(searchQuery){        
-            fetchSearch();
+        // Reset offset first before doing new term search
+        if(searchQuery){ 
+            if(searchQuery !== lastSearchQuery.current && searchOffset > 0){
+                setSearchOffset(0);
+            } else {       
+                fetchSearch();
+            }
         }
     }, [searchQuery, searchOffset, limit]);
 
