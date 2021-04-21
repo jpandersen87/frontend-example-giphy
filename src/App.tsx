@@ -1,9 +1,10 @@
 import React from 'react';
-import { Stack, IStackTokens } from '@fluentui/react';
-//import logo from './logo.svg';
+import { Stack, IStackTokens, Text, FontSizes } from '@fluentui/react';
+import logo from './logo.svg';
 import './App.css';
 import {GifSearch} from './Components/GifSearch';
 import axios from 'axios';
+import {NeutralColors} from '@fluentui/theme';
 
 //const boldStyle = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
@@ -41,7 +42,19 @@ export const App: React.FunctionComponent = () => {
       }}
       tokens={stackTokens}
     >
-
+      <Stack
+        styles={{
+          root: {
+            backgroundColor: NeutralColors.black,
+            color: NeutralColors.white,
+            width: '100%',
+            height:'3vmin'
+          }
+        }}
+        horizontal>
+          <img src={logo} alt="logo" className="App-logo" />
+          <Text styles={{root:{fontSize: FontSizes.large}}}>Giphy Example</Text>
+      </Stack>
       <GifSearch />
     </Stack>
   );
