@@ -9,9 +9,7 @@ import {NeutralColors} from '@fluentui/theme';
 //const boldStyle = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
 
-console.log(process.env.REACT_APP_GIPHY_API_KEY);
-
-// Artificial hourly-rate limiter
+// Artificial hourly-rate limiter (reload page to reset)
 let COUNTER = 0;
 const HOUR_LIMIT=10;
 axios.interceptors.response.use((res) => {
