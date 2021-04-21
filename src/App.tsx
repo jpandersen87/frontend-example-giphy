@@ -32,7 +32,7 @@ export const App: React.FunctionComponent = () => {
       verticalFill
       styles={{
         root: {
-          width: '960px',
+          maxWidth: '960px',
           margin: '0 auto',
           textAlign: 'center',
           color: '#605e5c',
@@ -46,7 +46,7 @@ export const App: React.FunctionComponent = () => {
             backgroundColor: NeutralColors.black,
             color: NeutralColors.white,
             width: '100%',
-            height:'3vmin'
+            height:'35px'
           }
         }}
         horizontal>
