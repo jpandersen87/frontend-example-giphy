@@ -6,7 +6,6 @@ import {GifSearch} from './Components/GifSearch';
 import axios from 'axios';
 import {NeutralColors} from '@fluentui/theme';
 
-//const boldStyle = { root: { fontWeight: FontWeights.semibold } };
 const stackTokens: IStackTokens = { childrenGap: 15 };
 
 // Artificial hourly-rate limiter (reload page to reset)
